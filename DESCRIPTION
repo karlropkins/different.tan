@@ -1,0 +1,17 @@
+Package: different.tan
+Title: different.tan
+Version: 0.1.0
+Date: 2022-11-19
+Description: R code for the analysis of vehicle emissions remote sensing system
+         (VERSS) data
+Type: Package
+Author: Karl Ropkins [aut, cre], Francis Pope [aut], David Beddows [aut], Omid
+         Ghaffarpasand [aut]
+Maintainer: Karl Ropkins <k.ropkins@its.leeds.ac.uk>
+Depends: R (>= 3.0.0), loa
+Imports: grid, RColorBrewer, plyr, lattice, openxlsx, boot, readr, foreign
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+LazyLoad: yes
+LazyData: yes

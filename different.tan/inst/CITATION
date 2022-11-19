@@ -1,0 +1,21 @@
+citHeader("To cite 'different.tan' package in publications use:")
+
+citEntry(entry="Manual",
+         title = "different.tan: EDAR Data analysis package. In-house (not for general release) package. Please contact K.Ropkins for details/copy. ",
+         author = personList(as.person("Karl Ropkins")),
+         year = format(as.Date(packageDescription("different.tan", fields = c("Date"))), "%Y"),
+         note = paste("R package version ", packageDescription("different.tan", fields = c("Version"))[1], sep=""),
+
+         textVersion =
+         paste("Karl Ropkins (",
+               format(as.Date(packageDescription("different.tan", fields = c("Date"))), "%Y"),
+               "). different.tan: EDAR Data analysis package. In-house (not for general release) package. Please contact K.Ropkins for details/copy. ",
+               "R package version ",
+               packageDescription("different.tan", fields = c("Version"))[1],
+               ".", sep=""))
+
+
+citFooter("Please cite both 'different.tan' and R ",
+          "when using 'different.tan' for data analysis.",
+          "For R citation, see ", sQuote("citation()"))
+

@@ -31,6 +31,5 @@ Vienna, Austria. ISBN 3-900051-07-0, URL http://www.R-project.org/.
 EDAR study references to add...
 }
 \author{
-Karl Ropkins, Francis Pope, David Beddows, Omid Ghaffarpasand; 
-(maintainer) Karl Ropkins <k.ropkins@its.leeds.ac.uk>
+Karl Ropkins, Francis Pope, David Beddows, Omid Ghaffarpasand
 }

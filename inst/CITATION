@@ -1,19 +1,21 @@
 citHeader("To cite 'different.tan' package in publications use:")
 
 citEntry(entry="Manual",
-         title = "different.tan: EDAR Data analysis package. In-house (not for general release) package. Please contact K.Ropkins for details/copy. ",
-         author = personList(as.person("Karl Ropkins")),
+         title = "different.tan: VERSS Data analysis package. GPL-3.0 license (but in development) package. Please contact K.Ropkins for details. ",
+         author = personList(as.person("Karl Ropkins"),
+                             as.person("Francis Pope"),
+                             as.person("David Beddows"),
+                             as.person("Omid Ghaffarpasand")),
          year = format(as.Date(packageDescription("different.tan", fields = c("Date"))), "%Y"),
-         note = paste("R package version ", packageDescription("different.tan", fields = c("Version"))[1], sep=""),
-
+         note = paste("R package version ", packageDescription("different.tan", 
+         fields = c("Version"))[1], sep=""),
          textVersion =
-         paste("Karl Ropkins (",
-               format(as.Date(packageDescription("different.tan", fields = c("Date"))), "%Y"),
-               "). different.tan: EDAR Data analysis package. In-house (not for general release) package. Please contact K.Ropkins for details/copy. ",
+         paste("Karl Ropkins, Francis Pope, David Beddows and Omid Ghaffarpasand (",
+               format(as.Date(packageDescription("different.tan", fields = c("Date"))), 
+               "%Y"),"). different.tan: VERSS Data analysis package. GPL-3.0 license (but in development) package. Please contact K.Ropkins for details. ",
                "R package version ",
                packageDescription("different.tan", fields = c("Version"))[1],
                ".", sep=""))
-
 
 citFooter("Please cite both 'different.tan' and R ",
           "when using 'different.tan' for data analysis.",

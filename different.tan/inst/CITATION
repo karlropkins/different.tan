@@ -17,7 +17,6 @@ citEntry(entry="Manual",
                packageDescription("different.tan", fields = c("Version"))[1],
                ".", sep=""))
 
-
 citFooter("Please cite both 'different.tan' and R ",
           "when using 'different.tan' for data analysis.",
           "For R citation, see ", sQuote("citation()"))

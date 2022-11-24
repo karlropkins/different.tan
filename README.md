@@ -20,3 +20,10 @@ You can install the development version of different.tan from
 # install.packages("devtools")
 devtools::install_github("karlropkins/different.tan")
 ```
+
+## Contributing
+
+**different.tan** is an in-development package, and contributions are
+very welcome. We are using tidyverse contribution guidance regarding
+code of conduct but are not strict as them regarding coding style…
+[Contributions](https://karlropkins.github.io/different.tan/CONTRIBUTING.html)

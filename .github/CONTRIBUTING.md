@@ -10,8 +10,8 @@ good practices for those contributing to open software, datasets and archives mo
 
 You can fix typos, spelling mistakes, or grammatical errors in the documentation directly using the GitHub web interface or as a pull request (see below).
 
-Documentation is generated using [roxygen2](https://roxygen2.r-lib.org/articles/roxygen2.html), so you will need to edit comments in the rocxygen comments 
-in the .R relevant script, rather than the .Rd file. (That gets built from the .R using devtools::document())   
+Documentation is generated using [roxygen2](https://roxygen2.r-lib.org/articles/roxygen2.html), so you will need to edit comments in the roxygen2 comments section  
+in the related .R relevant script, rather than as discrete a .Rd file. (That .Rd file can then be built from the .R using devtools::document())   
 
 ## Bigger changes and code changes
 
@@ -49,6 +49,6 @@ we would appreciate a 'head-up' regardless of the format if you think anything i
 
 ## Code of Conduct
 
-Please note that the align project is released with a
+Please note that the different.tan project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this
 project you agree to abide by its terms.

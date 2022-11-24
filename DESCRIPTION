@@ -20,3 +20,5 @@ Encoding: UTF-8
 RoxygenNote: 7.2.1
 LazyLoad: yes
 LazyData: yes
+URL: https://github.com/karlropkins/different.tan, https://karlropkins.github.io/different.tan/
+BugReports: https://github.com/karlropkins/different.tan/issues

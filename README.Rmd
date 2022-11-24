@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-R code for the analysis of vehicle emissions remote sensing systems (VERSS)
+R code for the analysis of vehicle emissions remote sensing systems (VERSS).  
 
 > In development package
 

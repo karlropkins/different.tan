@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 R code for the analysis of vehicle emissions remote sensing systems
-(VERSS)
+(VERSS).
 
 > In development package
 

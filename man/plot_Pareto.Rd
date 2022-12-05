@@ -35,7 +35,7 @@ to highest.}
 
 \item{panel}{lattice plot argument}
 
-\item{drop.nas}{Return NAs before plotting.}
+\item{drop.nas}{Remove NAs before plotting.}
 
 \item{Pareto}{(Character) Pareto plot type, options: 'Pareto' standard Pareto; 
 'cum.Pareto' cumulative Pareto; 'normal.cum.Pareto' cumulative Pareto expressed 

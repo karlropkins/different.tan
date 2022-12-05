@@ -26,7 +26,7 @@ R code for the analysis of vehicle emissions remote sensing systems (VERSS).
 
 You can install the development version of different.tan from [GitHub](https://github.com/) with:
 
-``` r
+```{r eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("karlropkins/different.tan")
 ```
@@ -37,18 +37,17 @@ devtools::install_github("karlropkins/different.tan")
 
 ## Examples
 
-``` r
+Load __different.tan__ package and get some VERSS data, e.g. from the Denver [FEAT Archive](https://digitalcommons.du.edu/feat/):
+
+```{r, message=FALSE, warning=FALSE}
 require(different.tan)
-```
-
-Get some VERSS data, e.g. from the Denver [FEAT Archive](https://digitalcommons.du.edu/feat/):
-
-``` r
 feat <- import_featdata("Fresno 21")
 ```
+
 A quick Pareto analysis:
 
-``` r 
+```{r Pareto, dpi=400} 
 plot_Pareto(nox.gkg, fuel, data=feat, Pareto = "cum.Pareto", transpose.y.percent=c(80, 95))
 ```
 
+Here, e.g., we see that 95\% of observed NOx emissions were produced by about 25\% passing cars, and 80\% were produced about 2\% passing cars.

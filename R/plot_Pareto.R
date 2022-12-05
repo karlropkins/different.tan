@@ -15,12 +15,19 @@
 #' to highest.
 #' @param ... Passed to lattice and loa plot functions (and used if possible).
 #' @param panel lattice plot argument
-#' @param drop.nas Return NAs before plotting.
+#' @param drop.nas Remove NAs before plotting.
 #' @param Pareto (Character) Pareto plot type, options: 'Pareto' standard Pareto; 
 #' 'cum.Pareto' cumulative Pareto; 'normal.cum.Pareto' cumulative Pareto expressed 
 #' as a proportion; and, 'percent.cum.Pareto' cumulative Pareto expressed 
 #' as a percentage.
 #' @returns \code{lattice} object plot. 
+
+###########################
+#to check
+###########################
+
+##not sure this is removing nas!
+##needs references adding 
 
 
 #splatted function
@@ -187,9 +194,8 @@ function (y, groups = NULL, cond = NULL, data = NULL, x = NULL,
         }
         
     }
-    
-    plt
-    
+    plot(plt)
+    invisible(plt)
 }
 
 
@@ -274,10 +280,11 @@ panel.ParetoPlot <- function(...){
       do.call(panel.xyplot, temp)
   }   
   
-  transpose <- do.call(listLoad, listUpdate(list(load="transpose", transpose.col="red", transpose.label.format=2), extra.args))$transpose   
+  transpose <- do.call(listLoad, listUpdate(list(load="transpose", transpose.col="red", transpose.label.format=2,
+                                                 transpose.cex=0.85), extra.args))$transpose   
   if(any(c("y", "y.normal", "y.percent") %in% names(transpose))){
     borders <- current.panel.limits(unit="native")
-    diffs <- c((borders$xlim[2]-borders$xlim[1])*0.05, (borders$ylim[2]-borders$ylim[1])*0.05)
+    diffs <- c((borders$xlim[2]-borders$xlim[1])*0.02, (borders$ylim[2]-borders$ylim[1])*0.02)
     lims <- c(min(extra.args$y, na.rm=TRUE), max(extra.args$y, na.rm=TRUE))
     
     if(!"y" %in% names(transpose)){
@@ -289,13 +296,13 @@ panel.ParetoPlot <- function(...){
       do.call(panel.lines, listUpdate(transpose, list(y=rep(i, 2), x=c(borders$xlim[1], temp))))
       do.call(panel.arrows, listUpdate(transpose, list(x0=temp, x1=temp, y0=i, y1=borders$ylim[1])))
       label <- as.character(signif(i, 4))
-      if(transpose$label.format==2) label <- paste(signif((i/lims[2])*100, 2), "%", sep="")
-      if(transpose$label.format==3) label <- paste(label, " (", signif((i/lims[2])*100, 2), "%)", sep="")
-      do.call(panel.text, listUpdate(transpose, list(x=borders$xlim[1], y=i+diffs[2], label=label, pos=4)))
+      if(transpose$label.format==2) label <- paste(round((i/lims[2])*100), "%", sep="")
+      if(transpose$label.format==3) label <- paste(label, " (", round((i/lims[2])*100), "%)", sep="")
+      do.call(panel.text, listUpdate(transpose, list(x=borders$xlim[1]+diffs[1], y=i+diffs[2], label=label, pos=4)))
       label <- as.character(round(temp))
-      if(transpose$label.format==2) label <- paste(signif((temp/max(extra.args$x, na.rm=TRUE))*100, 2), "%", sep="")
-      if(transpose$label.format==3) label <- paste(label, " (", signif((temp/max(extra.args$x, na.rm=TRUE))*100, 2), "%)", sep="")
-      do.call(panel.text, listUpdate(transpose, list(x=temp, y=borders$ylim[1]+(2*diffs[2]), label=label, pos=4)))
+      if(transpose$label.format==2) label <- paste(round((temp/max(extra.args$x, na.rm=TRUE))*100), "%", sep="")
+      if(transpose$label.format==3) label <- paste(label, " (", round((temp/max(extra.args$x, na.rm=TRUE))*100), "%)", sep="")
+      do.call(panel.text, listUpdate(transpose, list(x=temp+(0.5*diffs[1]), y=borders$ylim[1]+diffs[2], label=label, pos=4)))
     }
   }
   

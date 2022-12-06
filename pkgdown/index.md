@@ -1,5 +1,5 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- index.md is generated from index.Rmd. Please edit that file -->
 
 # different.tan
 
@@ -10,10 +10,6 @@ R code for the analysis of vehicle emissions remote sensing systems
 (VERSS).
 
 > In development package
-
-## Project Webpages
-
-Projects pages: <https://karlropkins.github.io/different.tan/>
 
 ## Installation
 
@@ -50,5 +46,6 @@ plot_Pareto(nox.gkg, fuel, data=feat, Pareto = "cum.Pareto", transpose.y.percent
 
 <img src="man/figures/README-Pareto-1.png" width="100%" />
 
-Here, e.g., we see that 95% of observed NOx emissions were produced by
-about 25% passing cars, and 80% were produced about 2% passing cars.
+Here, for example, we see that 95% of observed NOx emissions were
+produced by about 25% passing cars, and 80% were produced about 2%
+passing cars.

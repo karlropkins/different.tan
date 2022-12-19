@@ -55,4 +55,4 @@ A quick Pareto analysis:
 plot_Pareto(nox.gkg, fuel, data=feat, Pareto = "cum.Pareto", transpose.y.percent=c(80, 95))
 ```
 
-Here, e.g., we see that 95\% of observed NOx emissions were produced by about 25\% passing cars, and 80\% were produced about 2\% passing cars.
+Here, e.g., we see that 95\% of observed NOx emissions were produced by about 25\% passing cars, and 80\% were produced about 6\% passing cars.

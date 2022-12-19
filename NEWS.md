@@ -12,7 +12,7 @@
       re-adding all code we are able to share).
     * Re-Adding plot_Pareto and 
       plot_ParetoEnrichment. 
-    * Added import_featdata for route download 
+    * Added import_featdata for routine download 
       of data from the FEAT data archive. 
   
 

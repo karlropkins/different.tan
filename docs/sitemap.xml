@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://karlropkins.github.io/different.tan/404.html</loc>
+    <loc>/404.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/authors.html</loc>
+    <loc>/authors.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/index.html</loc>
+    <loc>/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/LICENSE-text.html</loc>
+    <loc>/CONTRIBUTING.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/LICENSE.html</loc>
+    <loc>/index.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/reference/different.tan.html</loc>
+    <loc>/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/reference/import_featdata.html</loc>
+    <loc>/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/reference/index.html</loc>
+    <loc>/news/index.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/reference/plot_Pareto.html</loc>
+    <loc>/reference/different.tan.html</loc>
   </url>
   <url>
-    <loc>https://karlropkins.github.io/different.tan/reference/plot_ParetoEnrichment.html</loc>
+    <loc>/reference/import_featdata.html</loc>
+  </url>
+  <url>
+    <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/plot_Pareto.html</loc>
+  </url>
+  <url>
+    <loc>/reference/plot_ParetoEnrichment.html</loc>
   </url>
 </urlset>

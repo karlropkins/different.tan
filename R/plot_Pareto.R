@@ -294,15 +294,18 @@ panel.ParetoPlot <- function(...){
     for(i in transpose$y){
       temp <- extra.args$x[extra.args$y >= i][1]
       do.call(panel.lines, listUpdate(transpose, list(y=rep(i, 2), x=c(borders$xlim[1], temp))))
-      do.call(panel.arrows, listUpdate(transpose, list(x0=temp, x1=temp, y0=i, y1=borders$ylim[1])))
+      do.call(panel.arrows, listUpdate(transpose, list(x0=temp, x1=temp, y0=i, y1=borders$ylim[1],
+                                                       length=grid::unit(0.025, units="npc"))))
       label <- as.character(signif(i, 4))
       if(transpose$label.format==2) label <- paste(round((i/lims[2])*100), "%", sep="")
       if(transpose$label.format==3) label <- paste(label, " (", round((i/lims[2])*100), "%)", sep="")
-      do.call(panel.text, listUpdate(transpose, list(x=borders$xlim[1]+diffs[1], y=i+diffs[2], label=label, pos=4)))
+      do.call(panel.text, listUpdate(transpose, list(x=borders$xlim[1]+diffs[1], y=i+diffs[2], label=label, pos=4,
+                                                     cex=grid::unit(1, units="npc"))))
       label <- as.character(round(temp))
       if(transpose$label.format==2) label <- paste(round((temp/max(extra.args$x, na.rm=TRUE))*100), "%", sep="")
       if(transpose$label.format==3) label <- paste(label, " (", round((temp/max(extra.args$x, na.rm=TRUE))*100), "%)", sep="")
-      do.call(panel.text, listUpdate(transpose, list(x=temp+(0.5*diffs[1]), y=borders$ylim[1]+diffs[2], label=label, pos=4)))
+      do.call(panel.text, listUpdate(transpose, list(x=temp+(0.5*diffs[1]), y=borders$ylim[1]+diffs[2], label=label, pos=4,
+                                                     cex=grid::unit(1, units="npc"))))
     }
   }
   

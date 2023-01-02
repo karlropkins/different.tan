@@ -3,6 +3,7 @@
 * __v 0.1.1__ [2022-11-24]
     * posted on github 
     * updated citation information 
+    * plot_Pareto arrow arm 
 
 * __v 0.1.0__ [2022-09-03]
     * First package compile for public version 

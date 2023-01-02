@@ -51,4 +51,5 @@ plot_Pareto(nox.gkg, fuel, data=feat, Pareto = "cum.Pareto", transpose.y.percent
 <img src="man/figures/README-Pareto-1.png" width="100%" />
 
 Here, e.g., we see that 95% of observed NOx emissions were produced by
-about 25% passing cars, and 80% were produced about 6% passing cars.
+about 25% of passing cars, and 80% were produced about 6% of passing
+cars.

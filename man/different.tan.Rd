@@ -28,6 +28,8 @@ R Development Core Team (2011). R: A language and environment for
 statistical computing. R Foundation for Statistical Computing, 
 Vienna, Austria. ISBN 3-900051-07-0, URL http://www.R-project.org/.
 
+Our own related work includes:
+
 Ropkins, K., DeFries, T.H., Pope, F., Green, D.C., Kemper, J., Kishan, S., 
 Fuller, G.W., Li, H., Sidebottom, J., Crilley, L.R. and Kramer, L. (2017). 
 Evaluation of EDAR vehicle emissions remote sensing technology. Science of 

@@ -15,7 +15,15 @@
 #' @param level.nmax [to be added]
 
 #splatted function
+#########################
 #' @export
+
+############################
+# jobs
+############################
+
+# this needs tidying and documenting....
+
 plot_ParetoEnrichment <- 
 function (x, y=NULL, cut=0.8, data = NULL, ..., 
                                   min.bin=1, drop.nas = TRUE, order=FALSE, level.nmax=NULL) 

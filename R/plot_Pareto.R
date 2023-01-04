@@ -22,12 +22,20 @@
 #' as a percentage.
 #' @returns \code{lattice} object plot. 
 
+
+##########################
+#to do 
+##########################
+
+# add references??? 
+
 ###########################
 #to check
 ###########################
 
 ##not sure this is removing nas!
 ##needs references adding 
+
 
 
 #splatted function

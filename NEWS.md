@@ -1,5 +1,9 @@
 # different.tan version 0.1
 
+* __v 0.1.2__
+    * news update [2023-01-09]
+    * 
+
 * __v 0.1.1__ 
     * plot_Pareto arrow arm [2023-01-04]
     * various webpage additions [2022-12-19]

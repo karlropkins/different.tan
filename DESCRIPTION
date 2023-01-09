@@ -1,7 +1,7 @@
 Package: different.tan
 Title: different.tan
-Version: 0.1.1
-Date: 2022-11-24
+Version: 0.1.2
+Date: 2023-01-09
 Description: R code for the analysis of vehicle emissions remote sensing system
          (VERSS) data
 Type: Package
@@ -20,5 +20,6 @@ Encoding: UTF-8
 RoxygenNote: 7.2.1
 LazyLoad: yes
 LazyData: yes
-URL: https://github.com/karlropkins/different.tan, https://karlropkins.github.io/different.tan/
+URL: https://github.com/karlropkins/different.tan,
+         https://karlropkins.github.io/different.tan/
 BugReports: https://github.com/karlropkins/different.tan/issues

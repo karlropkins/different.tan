@@ -41,7 +41,8 @@ feat <- import_featdata("Fresno 21")
 A quick Pareto analysis:
 
 ``` r
-plot_Pareto(nox.gkg, fuel, data=feat, Pareto = "cum.Pareto", transpose.y.percent=c(80, 95))
+plot_Pareto(nox.gkg, fuel, data=feat, 
+            Pareto = "cum.Pareto", transpose.y.percent=c(80, 95))
 ```
 
 <img src="man/figures/README-Pareto-1.png" width="100%" />

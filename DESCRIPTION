@@ -14,7 +14,16 @@ Authors@R: c(person(given = "Karl", family = "Ropkins", role = c("aut", "cre"), 
          c(ORCID = "0000-0002-4111-339x")))
 Maintainer: Karl Ropkins <k.ropkins@its.leeds.ac.uk>
 Depends: R (>= 3.0.0), loa
-Imports: grid, RColorBrewer, plyr, lattice, openxlsx, boot, readr, foreign
+Imports: 
+    grid,
+    RColorBrewer,
+    plyr,
+    lattice,
+    openxlsx,
+    boot,
+    readr,
+    foreign,
+    readxl
 License: GPL (>= 3)
 Encoding: UTF-8
 RoxygenNote: 7.2.1

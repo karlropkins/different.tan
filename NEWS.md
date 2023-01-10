@@ -1,8 +1,8 @@
 # different.tan version 0.1
 
 * __v 0.1.2__
+    * added draft import_edardata (westlothian 2017) [2023-01-10]
     * news update [2023-01-09]
-    * 
 
 * __v 0.1.1__ 
     * plot_Pareto arrow arm [2023-01-04]

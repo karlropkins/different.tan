@@ -11,7 +11,7 @@
 #' names.   
 #' @param ... Currently ignored.
 #' @details The function imports data from the 
-#' \href{https://www.westlothian.gov.uk/article/45802/Real-Time-Vehicle-Emissions-pilot-project-March-2017}{Edinburgh and West Lothian Real Time Vehicle Emissions Stduy 2017}. 
+#' \href{https://www.westlothian.gov.uk/article/45802/Real-Time-Vehicle-Emissions-pilot-project-March-2017}{Edinburgh and West Lothian Real Time Vehicle Emissions Study 2017}. 
 #' 
 # (table hand written - only two sites)
 #' \tabular{lll}{
